@@ -1,0 +1,72 @@
+/*Desktop design below*/
+body {
+    /*Background image here*/
+    width: 100vw;
+    background-color: lightgrey;
+}
+
+.wrapper {
+    margin: auto;
+    background-color: white;
+    height: 150vh;
+    width: 70vw;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        'header'
+        'mainwrap';
+}
+
+header {
+    background-color: lightgrey;
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        'logo'
+        'nav';
+}
+
+.logo {
+    grid-area: logo;
+    /*input logo image*/
+}
+
+.nav {
+    grid-area: nav: display:flex;
+}
+
+.mainwrap {
+    background-color: lightgrey;
+    grid-area: mainwrap;
+    display: grid;
+    grid-template-areas:
+        'title title'
+        'img1 aside'
+        'art aside'
+        'footer footer';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+}
+
+.title {}
+
+.art {}
+
+aside {
+    display: grid;
+    grid-template-areas:
+        'div1'
+        'div2'
+        'div3'
+        'div4'
+}
+
+.asdiv {
+    grid-area: div1;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+}
