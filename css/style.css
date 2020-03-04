@@ -1,27 +1,22 @@
 /*Desktop design below*/
 body {
-    /*Background image here*/
-    width: 100vw;
-    background-color: lightgrey;
-}
-
-.wrapper {
-    margin: auto;
-    background-color: white;
+    /*background-image: url("../img/track1.jpg");*/
+    background-height: 100%;
     height: 150vh;
-    width: 70vw;
+    grid-row-gap: 1em;
     display: grid;
-    grid-gap: 2em;
-    grid-template-rows: 1fr 5fr;
     grid-template-areas:
         'header'
-        'mainwrap';
+        'wrapper'
+        'footer';
 }
 
-header {
-    background-color: lightgrey;
+.header {
+    background-color: red;
     grid-area: header;
     display: grid;
+    width: 100%;
+    height: 5em;
     grid-template-areas:
         'logo'
         'nav';
@@ -33,37 +28,75 @@ header {
 }
 
 .nav {
-    grid-area: nav: display:flex;
+    grid-area: nav;
+    display: flex;
 }
 
-.mainwrap {
-    background-color: lightgrey;
-    grid-area: mainwrap;
+.wrapper {
+    grid-area: wrapper;
+    width: 70vw;
+    height: 150vh;
+    margin: auto;
     display: grid;
+    grid-gap: 1em;
     grid-template-areas:
         'title title'
         'img1 aside'
-        'art aside'
-        'footer footer';
+        'art aside';
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 2fr 8fr 12fr;
 }
 
-.title {}
+.title {
+    grid-area: title;
+    background-color: limegreen;
+}
 
-.art {}
+.img1 {
+    grid-area: img1;
+    background-color: blue;
+}
+
+.art {
+    grid-area: art;
+    background-color: limegreen;
+}
 
 aside {
+    grid-area: aside;
     display: grid;
+    grid-row-gap: 1em;
     grid-template-areas:
-        'div1'
-        'div2'
-        'div3'
-        'div4'
+        'asdiv1'
+        'asdiv2'
+        'asdiv3'
+        'asdiv4'
+        'asdiv5'
 }
 
-.asdiv {
-    grid-area: div1;
+#asdiv1 {
+    grid-area: asdiv1;
+    background-color: pink;
+}
+
+#asdiv2 {
+    grid-area: asdiv2;
+    background-color: purple;
+}
+
+#asdiv3 {
+    grid-area: asdiv3;
+    background-color: pink;
+}
+
+#asdiv4 {
+    grid-area: asdiv4;
+    background-color: purple;
+}
+
+#asdiv5 {
+    grid-area: asdiv5;
+    background-color: pink;
 }
 
 footer {
