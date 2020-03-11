@@ -2,6 +2,7 @@
 body {
     /*background-image: url("../img/track1.jpg");*/
     background-height: 100%;
+    background-color: lightgrey;
     height: 150vh;
     grid-row-gap: 1em;
     display: grid;
@@ -12,24 +13,39 @@ body {
 }
 
 .header {
-    background-color: red;
+    background-color: grey;
     grid-area: header;
     display: grid;
+    padding: 0;
     width: 100%;
-    height: 5em;
-    grid-template-areas:
-        'logo'
-        'nav';
+    height: 6em;
 }
 
-.logo {
-    grid-area: logo;
-    /*input logo image*/
-}
-
-.nav {
-    grid-area: nav;
+.headerflex {
     display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+#logo {}
+
+#navwhatis {
+
+}
+
+#navbikes {
+
+}
+
+#navtrack {
+
+}
+
+#navrules {
+
 }
 
 .wrapper {
@@ -40,26 +56,25 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
-        'title title'
-        'img1 aside'
-        'art aside';
-    grid-template-columns: 3fr 1fr;
+        'title'
+        'img1'
+        'art';
     grid-template-rows: 2fr 8fr 12fr;
 }
 
 .title {
     grid-area: title;
-    background-color: limegreen;
+    background-color: white;
 }
 
 .img1 {
     grid-area: img1;
-    background-color: blue;
+    background-color: white;
 }
 
 .art {
     grid-area: art;
-    background-color: limegreen;
+    background-color: white;
 }
 
 aside {
@@ -100,6 +115,6 @@ aside {
 }
 
 footer {
-    background-color: red;
+    background-color: white;
     grid-area: footer;
 }
