@@ -2,7 +2,8 @@
 body {
     /*background-image: url("../img/track1.jpg");*/
     background-height: 100%;
-    background-color: lightgrey;
+    margin: 0;
+    background-color: white;
     height: 150vh;
     grid-row-gap: 1em;
     display: grid;
@@ -12,41 +13,35 @@ body {
         'footer';
 }
 
-.header {
-    background-color: grey;
+#header {
+    font-family: 'Exo', sans-serif;
+    background-color: #33ccff;
     grid-area: header;
-    display: grid;
     padding: 0;
     width: 100%;
     height: 6em;
-}
-
-.headerflex {
     display: flex;
-    justify-content: left;
-    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row wrap;
     align-items: center;
     font-family: sans-serif;
     color: white;
+    box-shadow: 5px 5px 5px grey;
 }
 
-#logo {}
-
-#navwhatis {
-
+.logo {
+    max-height: 90%;
 }
 
-#navbikes {
-
+.navwhatis {
+    color: white;
 }
 
-#navtrack {
+.navbikes {}
 
-}
+.navtrack {}
 
-#navrules {
-
-}
+.navrules {}
 
 .wrapper {
     grid-area: wrapper;
@@ -57,18 +52,19 @@ body {
     grid-gap: 1em;
     grid-template-areas:
         'title'
-        'img1'
+        'mainimg'
         'art';
     grid-template-rows: 2fr 8fr 12fr;
 }
 
 .title {
+    font-family: 'Exo', sans-serif;
     grid-area: title;
     background-color: white;
 }
 
-.img1 {
-    grid-area: img1;
+.mainimg {
+    grid-area: mainimg;
     background-color: white;
 }
 
