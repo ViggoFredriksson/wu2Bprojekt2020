@@ -4,43 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>The Track</title>
     <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="main.js" type="text/javascript"></script>
-    <header id="header">
-        <div><a href="index.html"><img class=logo src="img/108png.png" height="90"></a></div>
-        <div class=navwhatis> <a href="whatis.html">What is it?</a></div>
-        <div class=navbikes><a href="bikes.html">The bikes</a></div>
-        <div class=navtrack><a href="track.html">The track</a></div>
-        <div class=navrules><a href="rules.html">The rules</a></div>
-    </header>
-    <main class="wrapper">
-        <div class="title">
-            <h1>The Track</h1>
-        </div>
-        <div class="mainimg">
-            main img
-        </div>
-        <article class="art">
-            Main text
-        </article>
-        <!--
-      <aside>
-            <div id="asdiv1">1</div>
-            <div id="asdiv2">2</div>
-            <div id="asdiv3">3</div>
-            <div id="asdiv4">4</div>
-            <div id="asdiv5">5</div>
-        </aside>
- -->
-    </main>
-    <footer>
-        footer
-    </footer>
 
+    <!-- header - Contains navigation. Same across all html-pages. -->
+    <header class="header">
+        <div>
+            <a href="index.html"><img class=logo src="img/logo.png" alt="Logo depicting track cyclist"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="sport.html" class="nav-link">The sport</a>
+            </li>
+            <li>
+                <a href="bikes.html" class="nav-link">The bikes</a>
+            </li>
+            <li>
+                <a href="track.html" class="nav-link">The track</a>
+            </li>
+            <li>
+                <a href="events.html" class="nav-link">The events</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- Wrapper - includes everything but the header. -->
+    <!-- Makes grid easier to style the multiple html-files with a single css-file -->
+    <main id="track-wrapper" class="wrapper">
+
+        <!-- Main heading and image. -->
+        <h1 class="heading">The Velodrome</h1>
+        <img class="mainimg" src="img/velodrome1.jpg" alt="Picture of a velodrome">
+
+        <!-- Main article - explains the content of the page. -->
+        <article class="main-art">
+            <h2>The track itself - The velodrome</h2>
+            <p>
+                The track, called a velodrome, is a purpose-built bicycle racing
+                arena. Modern velodromes have standardized measurements,
+                consisting of two 180-degree bends connected my two straghts.
+                The bends are steeply banked, but transition into the not so
+                steep straights.
+            </p>
+        </article>
+
+        <!-- Double article container -->
+        <!-- Two articles side by side on desktop, stacked on mobile -->
+        <div class="double-art-container">
+
+            <article class="art-1of2" class="double-art">
+                <h3 class="double-art-heading">Why is it banked?</h3>
+                <img class="double-art-img" src="img/bank1.jpg" alt="Picture of single track cyclist on the banking of a velodrome">
+                <p class="double-art-text">
+                    So you can go faster! With the curves of the track being
+                    banked, you don't have to slow down!
+                </p>
+            </article>
+
+            <article class="art-2of2" class="double-art">
+                <h3 class="double-art-heading">Track markings - What do they mean?</h3>
+                <img class="double-art-img" src="img/markings1.jpg" alt="">
+                <p class="double-art-text">
+                    The velodrome featurs multiple colored lines that go all the
+                    way around the track. These lines are usually laid out
+                    in a specific way.Between the infield and the track itself
+                    lies the blue "cote d'azur".This is not a part of the track,
+                    and riding on it to overtake a competitor will disqualify you.
+                    20 cm above the "cote d'azur" lies the black measurment line,
+                    which defines the track length. If Olympic or World
+                    Championship events are to be held at a velodrome, the measuring
+                    line, and thus also the track itself, must be the standard
+                    250 m. The black line also indicates the optimal route for
+                    a track cyclist to take around the track, as it would be the shortest.
+                    5 cm above the measuring line is the red sprinter's line.
+                    Between the sprinter's line and the measuring line is the
+                    sprinters lane. A rider in the sprinter's lane may not be
+                    passed on the inside. At the middle of the track's width
+                    is the blue stayer's line. This line is used in races in which
+                    motorbikes are used for pacing. During such events, the
+                    motorbike may not be overtaken on the inside of this line.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Footer - Very simple footer. Contains relevant information about the website. -->
+
+        <footer>
+            <ul class="footer-items">
+                <li>Viggo Fredriksson 2020</li>
+                <li>
+                    <a href="misc/credit.html">Image credit</a>
+                </li>
+                <li>
+                    <a href="misc/planering.html">Planning</a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

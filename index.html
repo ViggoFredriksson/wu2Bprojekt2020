@@ -6,41 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="main.js" type="text/javascript"></script>
-    <header id="header">
-        <div><a href="index.html"><img class=logo src="img/108png.png" height="90"></a></div>
-        <div class=navwhatis> <a href="whatis.html">What is it?</a></div>
-        <div class=navbikes><a href="bikes.html">The bikes</a></div>
-        <div class=navtrack><a href="track.html">The track</a></div>
-        <div class=navrules><a href="rules.html">The rules</a></div>
+    <header class="header">
+        <div>
+            <a href="index.html"><img class=logo src="img/logo.png" alt="Logo depicting track cyclist"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="sport.html" class="nav-link">The sport</a>
+            </li>
+            <li>
+                <a href="bikes.html" class="nav-link">The bikes</a>
+            </li>
+            <li>
+                <a href="track.html" class="nav-link">The track</a>
+            </li>
+            <li>
+                <a href="events.html" class="nav-link">The events</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
-    <main class="wrapper">
-        <div class="title">
-            <h1>Welcome!</h1>
-        </div>
-        <div class="mainimg">
-            main img
-        </div>
-        <article class="art">
-            Main text
-        </article>
-        <!--
-      <aside>
-            <div id="asdiv1">1</div>
-            <div id="asdiv2">2</div>
-            <div id="asdiv3">3</div>
-            <div id="asdiv4">4</div>
-            <div id="asdiv5">5</div>
-        </aside>
- -->
-    </main>
-    <footer>
-        footer
-    </footer>
 
+    <!-- Wrapper - includes everything but the header. -->
+    <!-- Makes grid easier to style the multiple html-files with a single css-file -->
+    <main id="index-wrapper" class="wrapper">
+
+        <!-- Main heading and image. -->
+        <h1 class="heading">About track cycling</h1>
+        <img class="mainimg" src="img/track2.jpg" alt="Picture of track cyclists on an outdoor velodrome">
+
+        <!-- Main article - explains the content of the page. -->
+        <article class="main-art">
+            <h2>What is this website?</h2>
+            <p>
+                Hello and welcome to to this website. This website exist to introduce
+                people to the sport of track cycling. With the 2020 Summer Olympics
+                coming up, I, the creator of this website, thought it would be nice
+                if there was a place where people without much previous knowledge of
+                track cycling could get an introduction to the sport.
+            </p>
+        </article>
+
+        <footer>
+            <ul class="footer-items">
+                <li>Viggo Fredriksson 2020</li>
+                <li>
+                    <a href="misc/credit.html">Image credit</a>
+                </li>
+                <li>
+                    <a href="misc/planering.html">Planning</a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

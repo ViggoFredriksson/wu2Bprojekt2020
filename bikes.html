@@ -4,43 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>The bikes</title>
     <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="main.js" type="text/javascript"></script>
-    <header id="header">
-        <div><a href="index.html"><img class=logo src="img/108png.png" height="90"></a></div>
-        <div class=navwhatis> <a href="whatis.html">What is it?</a></div>
-        <div class=navbikes><a href="bikes.html">The bikes</a></div>
-        <div class=navtrack><a href="track.html">The track</a></div>
-        <div class=navrules><a href="rules.html">The rules</a></div>
-    </header>
-    <main class="wrapper">
-        <div class="title">
-            <h1>Bicycles for Track Cycling</h1>
-        </div>
-        <div class="mainimg">
-            main img
-        </div>
-        <article class="art">
-            Main text
-        </article>
-        <!--
-      <aside>
-            <div id="asdiv1">1</div>
-            <div id="asdiv2">2</div>
-            <div id="asdiv3">3</div>
-            <div id="asdiv4">4</div>
-            <div id="asdiv5">5</div>
-        </aside>
- -->
-    </main>
-    <footer>
-        footer
-    </footer>
 
+    <!-- header - Contains navigation. Same across all html-pages. -->
+    <header class="header">
+        <div>
+            <a href="index.html"><img class=logo src="img/logo.png" alt="Logo depicting track cyclist"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="sport.html" class="nav-link">The sport</a>
+            </li>
+            <li>
+                <a href="bikes.html" class="nav-link">The bikes</a>
+            </li>
+            <li>
+                <a href="track.html" class="nav-link">The track</a>
+            </li>
+            <li>
+                <a href="events.html" class="nav-link">The events</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- Wrapper - includes everything but the header. -->
+    <!-- Makes grid easier to style the multiple html-files with a single css-file -->
+    <main id="bikes-wrapper" class="wrapper">
+
+        <!-- Main heading and image. -->
+        <h1 class="heading">Track bicycles</h1>
+        <img class="mainimg" src="img/trackbike1.jpg" alt="Picture of a track bike">
+
+        <!-- Main article - explains the content of the page. -->
+        <article class="main-art">
+            <h2>About the track bicycle</h2>
+            <p>If you're new to track cycling, you might think that a track bike isn't to
+                different from any other bike, but you'd be wrong. A track bicycle differs from
+                other bicycles in some very significant ways.</p>
+        </article>
+
+        <!-- Tripple article - Contains three smaller articles with images.  -->
+        <div class="tripple-art-container">
+
+            <article class="art-1of3" class="tripple-art">
+                <h3 class="tripple-art-heading">Fixed gear</h3>
+                <img class="tripple-art-img" src="img/gearing.jpg" alt="Picture of track crankset.">
+                <p class="tripple-art-text">
+                    Track bicycles use a so called fixed gear drivetrain. It means that as long as the
+                    wheels of the bike are spinning, so are the pedals. This is because fixed gear bikes
+                    lack a freewheel. A freewheel of some kind is present on almost all bikes, and allows
+                    the rider to "coast", or stop pedaling while the bike is still rolling. This is
+                    is impossible to do on a fixed gear bicycle, as the rear sprocket, is directly connected
+                    to the wheel. Fixed gear bikes also lack, well, gears. If you want to go faster, you
+                    simply have to pedal faster. This isn't much of a problem, since there are no hills in
+                    the velodrome (the track).
+                </p>
+            </article>
+
+            <article class="art-2of3" class="tripple-art">
+                <h3 class="tripple-art-heading">No Brakes</h3>
+                <img class="tripple-art-img" src="img/cockpit1.jpg" alt="Picture of a track bicycle, with focus on the handlebars">
+                <p class="tripple-art-text">
+                    If you are familiar with what the cockpit of a road bike looks like, you'll see that
+                    the bike in the picture above lacks brake levers. It might seem like madness, but
+                    even though many track cyclist ride at speeds of 60 km/h or more, track bikes don't
+                    have any brakes. The only way to stop a track bike is to backpedal, but when you're
+                    moving at the speeds of an experienced track cyclist, going from full speed to standing
+                    still takes a very long time. There is also the fact that there isn't much of a need
+                    to be able to stop quickly, as focus is on going faster than your opponent.
+                </p>
+            </article>
+
+            <article class="art-3of3" class="tripple-art">
+                <h3 class="tripple-art-heading">Street use</h3>
+                <img class="tripple-art-img" src="img/streetbike1.jpg" alt="Picture of fixed gear bicycles being ridden on the street.">
+                <p class="tripple-art-text">
+                    Using track bikes on the street was originally popularized by bicycle messengers.
+                    Messengers appreciated the simplicity of the track bike, as it meant it wasn't Very
+                    prone to have mechanical issues. Having no brakes, track bikes were also less appealing
+                    to steal, meaning a messenger could feel reasonably safe leaving their bike unattended
+                    while picking up or dropping off a package. Nowadays, using fixed gear bikes on the
+                    street is quite popular. Some people equip their fixed gear bikes with breaks with flat
+                    handlebars and brakes, to make them better suited for street riding. These are sometimes
+                    refered to as tarck bikes, as a lighthearted way of mocking them for not being true
+                    track bicycles.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Footer - Very simple footer. Contains relevant information about the website. -->
+
+        <footer>
+            <ul class="footer-items">
+                <li>Viggo Fredriksson 2020</li>
+                <li>
+                    <a href="misc/credit.html">Image credit</a>
+                </li>
+                <li>
+                    <a href="misc/planering.html">Planning</a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

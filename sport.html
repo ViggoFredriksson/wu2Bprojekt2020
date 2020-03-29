@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sport</title>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header - Contains navigation. Same across all html-pages. -->
+    <header class="header">
+        <div>
+            <a href="index.html"><img class=logo src="img/logo.png" alt="Logo depicting track cyclist"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="sport.html" class="nav-link">The sport</a>
+            </li>
+            <li>
+                <a href="bikes.html" class="nav-link">The bikes</a>
+            </li>
+            <li>
+                <a href="track.html" class="nav-link">The track</a>
+            </li>
+            <li>
+                <a href="events.html" class="nav-link">The events</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- Wrapper - includes everything but the header. -->
+    <!-- Makes grid easier to style the multiple html-files with a single css-file -->
+    <main id="track-wrapper" class="wrapper">
+
+        <!-- Main heading and image. -->
+        <h1 class="heading">The Sport of Track Cycling</h1>
+        <img class="mainimg" src="img/sport1.jpg" alt="Picture of multiple track cyclists on the banking of a velodrome">
+
+        <!-- Main article - explains the content of the page. -->
+        <article class="main-art">
+            <h2>About the sport of track cycling</h2>
+            <p>
+                Track cycling is a bicycle racing sport. The races are usually held at banked tracks
+                called velodromes.
+            </p>
+        </article>
+
+        <!-- Double article container -->
+        <!-- Two articles side by side on desktop, stacked on mobile -->
+        <div class="double-art-container">
+
+            <article class="art-1of2" class="double-art">
+                <h3 class="double-art-heading">History</h3>
+                <img class="double-art-img" src="img/history1.jpg" alt="Monochromatic picture of historical track race.">
+                <p class="double-art-text">
+                    Track cycling is a fairly old sport and existed as early as 1870, if not earlier.
+                    Since the start of track cycling, the races have always been held on velodromes,
+                    although the tracks weren't standardized like they are today. The most notable
+                    historical change in track cycling are the bikes, being far lighter and more
+                    aerodynamic today, compared to what they used to be. Same goes with the
+                    other equipment that track cyclists use.
+                </p>
+            </article>
+
+            <article class="art-2of2" class="double-art">
+                <h3 class="double-art-heading">Popularity</h3>
+                <img class="double-art-img" src="img/audience1.jpg" alt="Picture of velodrome audience.">
+                <p class="double-art-text">
+                    While track cycling is nowhere near as popular as road
+                    cycling, it's not tiny either. It's probably most popular
+                    in Europeian countries such as Belgium, France, Germany and
+                    the United Kingdom. There track cycling is often used as a
+                    means to off season training for road-racers, who also
+                    ride the track professionally. The sport would probably be
+                    more popular if it was more accesssible, but that would
+                    require there to be more velodromes around the world.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Footer - Very simple footer. Contains relevant information about the website. -->
+
+        <footer>
+            <ul class="footer-items">
+                <li>Viggo Fredriksson 2020</li>
+                <li>
+                    <a href="misc/credit.html">Image credit</a>
+                </li>
+                <li>
+                    <a href="misc/planering.html">Planning</a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

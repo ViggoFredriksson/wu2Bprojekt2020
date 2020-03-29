@@ -1,116 +1,380 @@
-/*Desktop design below*/
 body {
-    /*background-image: url("../img/track1.jpg");*/
-    background-height: 100%;
     margin: 0;
-    background-color: white;
-    height: 150vh;
+    padding: 0;
+    width: 100vw;
     grid-row-gap: 1em;
     display: grid;
     grid-template-areas:
         'header'
-        'wrapper'
-        'footer';
+        'wrapper';
 }
 
-#header {
-    font-family: 'Exo', sans-serif;
+/*Header styling*/
+.header {
     background-color: #33ccff;
     grid-area: header;
     padding: 0;
     width: 100%;
-    height: 6em;
     display: flex;
+    height: 6em;
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
-    font-family: sans-serif;
-    color: white;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 0px 4px 4px grey;
 }
 
 .logo {
-    max-height: 90%;
+    height: 2.75em;
+    vertical-align: middle;
 }
 
-.navwhatis {
-    color: white;
+/*Nav styling*/
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    text-shadow: 2px 2px 2px #0086b3;
 }
 
-.navbikes {}
+.nav-link:hover {
+    text-decoration: line-through;
+}
 
-.navtrack {}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+}
 
-.navrules {}
+.nav-links li {
+    list-style: none;
+}
 
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 3em;
+    height: 6px;
+    margin: 10px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    height: 5.5rem;
+    vertical-align: middle;
+}
+
+.logotextbox {
+    display: none;
+}
+
+/*General wrapper styling.*/
 .wrapper {
     grid-area: wrapper;
     width: 70vw;
-    height: 150vh;
     margin: auto;
     display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-        'title'
-        'mainimg'
-        'art';
-    grid-template-rows: 2fr 8fr 12fr;
+    grid-gap: 2px;
 }
 
-.title {
-    font-family: 'Exo', sans-serif;
-    grid-area: title;
-    background-color: white;
+/* Layout for index.html*/
+#index-wrapper {
+    grid-template-areas:
+        'heading'
+        'mainimg'
+        'main-art'
+        'footer';
+}
+
+/*Layout for bikes.html*/
+#bikes-wrapper {
+    grid-template-areas:
+        'heading'
+        'mainimg'
+        'main-art'
+        'tripple-art-container'
+        'footer';
+}
+
+/*Layout for track.html*/
+#track-wrapper {
+    grid-template-areas:
+        'heading'
+        'mainimg'
+        'main-art'
+        'double-art-container'
+        'footer';
+}
+
+/*Layout for events.html*/
+#events-wrapper {
+    grid-template-areas:
+        'heading'
+        'mainimg'
+        'main-art'
+        'double-art-container-1'
+        'double-art-container-2'
+        'tripple-art-container-1'
+        'tripple-art-container-2'
+        'footer';
+}
+
+p {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 12px 0;
 }
 
 .mainimg {
     grid-area: mainimg;
-    background-color: white;
+    width: 70vw;
 }
 
-.art {
-    grid-area: art;
-    background-color: white;
+h2 {
+    font-family: 'Ubuntu', sans-serif;
 }
 
-aside {
-    grid-area: aside;
+.main-art {
+    grid-area: main-art;
+    background-color: white;
+    padding: 0
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+}
+
+/* Styling for the tripple article container and its content.*/
+.tripple-art-container {
+    grid-area: tripple-art-container;
     display: grid;
-    grid-row-gap: 1em;
     grid-template-areas:
-        'asdiv1'
-        'asdiv2'
-        'asdiv3'
-        'asdiv4'
-        'asdiv5'
+        'art-1of3 art-2of3 art-3of3';
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#asdiv1 {
-    grid-area: asdiv1;
-    background-color: pink;
+/*Defining location for tripple article containers when multiple are used*/
+#tripple-art-container-1 {
+    grid-area: tripple-art-container-1;
 }
 
-#asdiv2 {
-    grid-area: asdiv2;
-    background-color: purple;
+#tripple-art-container-2 {
+    grid-area: tripple-art-container-2;
 }
 
-#asdiv3 {
-    grid-area: asdiv3;
-    background-color: pink;
+.tripple-art {
+    display: grid;
+    grid-template-areas:
+        'tripple-art-heading'
+        'tripple-art-img'
+        'tripple-art-text';
 }
 
-#asdiv4 {
-    grid-area: asdiv4;
-    background-color: purple;
+.art-1of3 {
+    margin-right: 2.5%;
 }
 
-#asdiv5 {
-    grid-area: asdiv5;
-    background-color: pink;
+.art-2of3 {
+    margin: 0 2.5%;
+}
+
+.art-3of3 {
+    margin-left: 2.5%;
+}
+
+.tripple-art-img {
+    width: 100%;
+}
+
+/*Styling for the double article container and its content*/
+.double-art-container {
+    grid-area: double-art-container;
+    display: grid;
+    grid-template-areas:
+        'art-1of2 art-2of2';
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Defining location for double article containers when multiple are used*/
+#double-art-container-1 {
+    grid-area: double-art-container-1;
+}
+
+#double-art-container-2 {
+    grid-area: double-art-container-2;
+}
+
+.double-art {
+    display: grid;
+    grid-template-areas:
+        'double-art-heading'
+        'double-art-img'
+        'double-art-text';
+    grid-template-rows: 1fr;
+}
+
+.art-1of2 {
+    margin-right: 2.5%;
+}
+
+.art-2of2 {
+    margin-left: 2.5%;
+}
+
+.double-art-img {
+    width: 100%
 }
 
 footer {
-    background-color: white;
     grid-area: footer;
+    height: 2em;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: lightgrey;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-items a {
+    color: gray;
+    text-decoration: none;
+}
+
+/*Mobile below*/
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        height: 5em;
+    }
+
+    .logo {
+        height: 4.75em;
+    }
+
+    .nav-links {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 0px;
+        height: 100%;
+        top: 5em;
+        background-color: #33ccff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .mainimg {
+        width: 100vw;
+    }
+
+    .main-art {
+        padding: 0 5%;
+    }
+
+    /*Converts the article containers to a vertical layout for mobile*/
+    .tripple-art-container {
+        grid-template-areas:
+            'art-1of3'
+            'art-2of3'
+            'art-3of3';
+        margin: 5%;
+        grid-template-columns: 1fr;
+    }
+
+    .double-art-container {
+        grid-template-areas:
+            'art-1of2'
+            'art-2of2';
+        margin: 5%;
+        grid-template-columns: 1fr;
+    }
+
+    /*Adjusting margins for vertical alignment*/
+    .tripple-art {
+        margin: 5% 0;
+    }
+
+    .art-1of3 {
+        margin: 2.5% 0;
+    }
+
+    .art-2of3 {
+        margin: 2.5% 0;
+    }
+
+    .art-3of3 {
+        margin: 2.5% 0;
+    }
+
+    .double-art {
+        margin: 5% 0;
+    }
+
+    .art-1of2 {
+        margin: 2.5% 0;
+    }
+
+    .art-2of2 {
+        margin: 2.5% 0;
+    }
+
+    .footer-items {
+        padding: 0 5%;
+    }
+}
+
+/* Nav animation related things*/
+.nav-active {
+    transform: translateX(0%);
+}
+
+/*Burger animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-20px, 3px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-20px, -3px);
 }

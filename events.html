@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Events</title>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header - Contains navigation. Same across all html-pages. -->
+    <header class="header">
+        <div>
+            <a href="index.html"><img class=logo src="img/logo.png" alt="Logo depicting track cyclist"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="sport.html" class="nav-link">The sport</a>
+            </li>
+            <li>
+                <a href="bikes.html" class="nav-link">The bikes</a>
+            </li>
+            <li>
+                <a href="track.html" class="nav-link">The track</a>
+            </li>
+            <li>
+                <a href="events.html" class="nav-link">The events</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- Wrapper - includes everything but the header. -->
+    <!-- Makes grid easier to style the multiple html-files with a single css-file -->
+    <main id="events-wrapper" class="wrapper">
+
+        <!-- Main heading and image. -->
+        <h1 class="heading">Track Cycling Events</h1>
+        <img class="mainimg" src="img/event1.jpg" alt="Picture of track cycling team drafting.">
+
+        <!-- Main article - explains the content of the page. -->
+        <article class="main-art">
+            <h2>The different race formats</h2>
+            <p>
+                There are two broader categories of race formats: sprint races and endurance
+                races. The main sprint events are as follows: sprint, team sprint,
+                keirin and time trial. The main endurance formats are: Individual pursuit,
+                team pursuit, madison, scratch race, points race and omnium.
+            </p>
+        </article>
+
+        <!-- Double article container -->
+        <!-- Two articles side by side on desktop, stacked on mobile -->
+        <!-- Two are used on this page -->
+        <!-- image-tags not in use -->
+        <div id="double-art-container-1" class="double-art-container">
+            <article class="art-1of2">
+                <h3 class="double-art-heading">Sprint</h3>
+                <!-- Removed img tag -->
+                <p class="double-art-text">
+                    Two to four competitors, but usally two. The start next to
+                    each other, but sprint itself doesn't necessarily begin at
+                    the starting line. By going slow in the beginning, the riders
+                    attempt to trick their opponent into making the first move,
+                    allowing them to draft their opponent, to gain an aerodynamic
+                    advantage. This advantage lets them save energy, making it easier
+                    to overtake in time to cross the finish line first.
+                </p>
+            </article>
+
+            <article class="art-2of2">
+                <h3 class="double-art-heading">Team sprint</h3>
+                <!-- Removed img tag -->
+                <p class="double-art-text">
+                    Despite its name, the team sprint is not a regular cycling
+                    sprint event. Its a three-man time trial for men's events,
+                    or a two-woman event over two laps.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Double article container -->
+        <!-- Two articles side by side on desktop, stacked on mobile -->
+        <!-- image-tags not in use -->
+        <div id="double-art-container-2" class="double-art-container">
+
+            <article class="art-1of2">
+                <h3 class="double-art-heading">Keirin</h3>
+                <!-- Removed img tag -->
+                <p class="double-art-text">
+                    Meaning "racing cycle" in Japanese, is a a paced event
+                    where the riders sprint for victory following a speed controlled
+                    start behind a pacer bicycle or motorcycle. The keirin was
+                    originally invented in Japan, where it is huge in terms of
+                    gambling today.
+
+                </p>
+            </article>
+
+            <article class="art-2of2">
+                <h3 class="double-art-heading">Track Time Trial</h3>
+                <!-- Removed img tag -->
+                <p class="double-art-text">
+                    A sprint event in which individual track cyclist compete
+                    against the clock to be the fastest over a specified distance.
+                </p>
+            </article>
+
+        </div>
+        <!-- Tripple  article container -->
+        <!-- Three  articles side by side on desktop, stacked on mobile -->
+        <!-- Two are used on this page -->
+        <!-- image-tags not in use -->
+        <div id="tripple-art-container-1" class="tripple-art-container">
+
+            <article class="art-1of3">
+                <h3 class="tripple-art-heading">Individual pursuit</h3>
+                <!-- Removed img tag -->
+                <p class="tripple-art-text">
+                    An endurance event in which two track cyclist begin the race
+                    with a standing start on oppsite sides of the track. The
+                    riders start simultaneously to complete a distance specified
+                    distance in the fastest time. The distance is 3 km for women
+                    and 4 km for men.
+                </p>
+            </article>
+
+            <article class="art-2of3">
+                <h3 class="tripple-art-heading">Team pursuit</h3>
+                <!-- Removed img tag -->
+                <p class="tripple-art-text">
+                    Almost like the indiviual pursuit, but with two teams of up
+                    to four riders compete against eachother. From a standing
+                    start they try to ride the specified distance in the fastest
+                    time.
+                </p>
+            </article>
+
+            <article class="art-3of3">
+                <h3 class="tripple-art-heading">Madison</h3>
+                <!-- Removed img tag -->
+                <p class="tripple-art-text">
+                    A race in which each team must complete more laps than the
+                    other teams in a specified time. Each team's riders
+                    alternate over the courseof the race, so that only one rider
+                    in each team races at any time. The alternate rider has to
+                    be touched by his team mate before taking over.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Tripple  article container -->
+        <!-- Three  articles side by side on desktop, stacked on mobile -->
+        <!-- image-tags not in use -->
+        <div id="tripple-art-container-2" class="tripple-art-container">
+
+            <article class="art-1of3">
+                <h3 class="tripple-art-heading">Scratch race</h3>
+                <!-- Removed img tag -->
+                <p class="tripple-art-text">
+                    A race in which all the riders start together and attempt
+                    to be the first over the finish line after a specified
+                    number of laps. Riders that are lapped and overtaken by the
+                    rest of the group are eliminated.
+                </p>
+            </article>
+
+            <article class="art-2of3">
+                <h3 class="tripple-art-heading">Points race</h3>
+                <!-- Removed img tag -->
+                <p class="tripple-art-text">
+                    A 40 km long endurance race, in which a sprint is held every
+                    10 laps. Points are awarded to the top four finishers each
+                    lap. The rider with the most points at the end of the race
+                    wins.
+                </p>
+            </article>
+
+            <article class="art-3of3">
+                <h3 class="tripple-art-heading">Omnium</h3>
+                <!-- Removed img tag -->
+                <p class="tripple-art-text">
+                    The omnium is a multiple race track cycling event. It has
+                    had a variety of formats over the course of history, and
+                    the term has recently been adopted in road racing to
+                    describe certain multiple-day races.
+                </p>
+            </article>
+        </div>
+
+        <!-- Footer - Very simple footer. Contains relevant information about the website. -->
+
+        <footer>
+            <ul class="footer-items">
+                <li>Viggo Fredriksson 2020</li>
+                <li>
+                    <a href="misc/credit.html">Image credit</a>
+                </li>
+                <li>
+                    <a href="misc/planering.html">Planning</a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
